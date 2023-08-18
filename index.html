@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splash screen</title>
+    <link rel="icon" type="image/x-icon" href="well-removebg-preview.png">
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'space grotesk';
+        }
+
+        .container {
+            text-align: center;
+            color: black;
+            margin-top: 200px;
+        }
+
+        .title {
+            font-size: 70px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .button {
+        border-radius: 10px;
+        border: none;
+        background: #ffffff;
+        color: #000000;
+        text-align: center;
+        font-size: 23px;
+        padding: 10px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: all 0.5s ease-in;
+        font-family: 'montserrat';
+        border: #000000 solid 1px;
+        
+    }
+
+    .button:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0)scaleX(1.3);
+            }
+
+            to {
+                transform: translateY(1px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>WELCOME</h1>
+            <h6>-to my first portofolio-</h6>
+        </div>
+        <button class="button"><a href="my-first-portofolio.html"><span>Click here</span></a></button>
+    </div>
+</body>
+
+</html>

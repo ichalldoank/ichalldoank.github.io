@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link rel="icon" type="image/x-icon" href="images-removebg-preview.png">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        width: 100vw;
+        height: 10vh;
+        background: #000000;
+        display: flex;
+        color: #ffffff;
+        font-family: 'great vibes';
+    }
+
+    .navbar-brand {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .navbar-item {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        margin: 10px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #ffffff;
+
+    }
+
+    .home-item {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        background: #ffffff;
+        color: #000000;
+        font-family:'space grotesk';
+    }
+    .about-item {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        color: #ffffff;
+        transition: all 0.5s ease-in;
+        font-family:'space grotesk';
+    }
+
+    .about-item:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .service-item {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        color: #ffffff;
+        transition: all 0.5s ease-in;
+        font-family:'space grotesk';
+    }
+
+    .service-item:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .blog-item {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        color: #ffffff;
+        transition: all 0.5s ease-in;
+        font-family:'space grotesk';
+    }
+
+    .blog-item:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .contact-item {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        color: #ffffff;
+        transition: all 0.5s ease-in;
+        font-family:'space grotesk';
+    }
+
+    .contact-item:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+    /* bagian hero */
+
+    .hero {
+        width: 100vw;
+        height: 90vh;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'montserrat';
+    }
+
+    .area-title {
+        width: 30%;
+        padding: 100px;
+        font-family: 'montserrat';
+    }
+
+    .text-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .text-tagline {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: #000000;
+    }
+
+    .button {
+        border-radius: 10px;
+        border: none;
+        background: #ffffff;
+        color: #000000;
+        text-align: center;
+        font-size: 23px;
+        padding: 10px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: all 0.5s ease-in;
+        font-family: 'montserrat';
+        border: #000000 solid 1px;
+        
+    }
+
+    .button:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .area-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-brand img {
+        width: 350px;
+    }
+    .img-brand a :hover{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+   
+
+    .area-image-ig{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background: #ffffff;
+    }
+    .panel{
+        width: 100px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background: #000000;
+
+    }
+
+    @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img src="images-removebg-preview.png" alt="" width="50 px">
+            <h1>Portofolio</h1>
+        </div>
+        <div class="navbar-item">
+            <div class="list-item">
+                <a href="#"><b></b></a>
+                <ul>
+                    <li><a class="home-item" href="#">home</a></li>
+                    <li><a class="about-item" href="#">about</a></li>
+                    <li><a class="service-item" href="#">experience</a> </li>
+                    <li><a class="blog-item" href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="area-title">
+            <div class="text-title">
+                <p>Hi, 👋 im Haikal</p>
+            </div>
+            <div class="text-tagline">
+                <p>hello guys my full name is Haikal Al Fatih from class 10 RPL this is my first website bro hehe it's
+                    still bad it's natural that everything has a process cuy it's good</p>
+            </div>
+            <button class="button"><span>explore ?</span></button>
+        </div>
+        <div class="area-image">
+            <div class="img-brand">
+                <a href="https://www.instagram.com/kla.kall/" target="blank"><img
+                        src="ig.png" alt=""></a>
+
+            </div>
+        </div>
+    </div><hr color="black">
+    <div class="hero">
+        <div class="area-image">
+            <div class="img-brand">
+                <img src="Screenshot 2023-08-14 at 07.33 1.png" alt="">
+            </div>
+        </div>
+        <div class="area-title">
+            <div class="text-title">
+                <p>about me</p>
+            </div>
+            <div class="text-tagline">
+                <p> i live in depok to be exact at harjamukti on the east east border, i was born in makassar and my junior high school was al-bassam and my high school was in idn</p>
+            </div>
+            <button class="button"><span>read more</span></button>
+        </div>
+    </div>
+    </div><hr color="black">
+    <div class="container">
+        <div class="panel"></div>
+    </div>
+</body>
+</html>

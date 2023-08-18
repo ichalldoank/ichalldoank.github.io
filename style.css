@@ -1,0 +1,27 @@
+.home {
+    width:100vw;
+    height: 100vh;
+    background:purple;
+    display: flex;
+}
+
+.kanan {
+    width: 50%;
+    height: 50%;
+    background: silver;
+    color: aquamarine;
+    text-align: center;
+}
+
+.kiri {
+    width: 50%;
+    height: 50%;
+    background: #2de608;
+    text-align: center;
+}
+
+#home {
+    width: 100vw;
+    height: 50vh;
+    background: pink;
+}
