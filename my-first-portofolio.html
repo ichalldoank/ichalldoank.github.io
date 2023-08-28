@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,23 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
 </head>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
+
     .navbar {
         width: 100vw;
         height: 10vh;
         background: #000000;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         color: #ffffff;
         font-family: 'great vibes';
     }
@@ -58,17 +65,18 @@
 
     .home-item {
         padding: 10px 20px;
-        border-radius: 1000px;
+        border-radius: 13px;
         background: #ffffff;
         color: #000000;
-        font-family:'space grotesk';
+        font-family: 'space grotesk';
     }
+
     .about-item {
         padding: 10px 20px;
-        border-radius: 1000px;
+        border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family:'space grotesk';
+        font-family: 'space grotesk';
     }
 
     .about-item:hover {
@@ -78,10 +86,10 @@
 
     .service-item {
         padding: 10px 20px;
-        border-radius: 1000px;
+        border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family:'space grotesk';
+        font-family: 'space grotesk';
     }
 
     .service-item:hover {
@@ -91,10 +99,10 @@
 
     .blog-item {
         padding: 10px 20px;
-        border-radius: 1000px;
+        border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family:'space grotesk';
+        font-family: 'space grotesk';
     }
 
     .blog-item:hover {
@@ -104,16 +112,17 @@
 
     .contact-item {
         padding: 10px 20px;
-        border-radius: 1000px;
+        border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family:'space grotesk';
+        font-family: 'space grotesk';
     }
 
     .contact-item:hover {
         background: #ffffff;
         color: #000000;
     }
+
     /* bagian hero */
 
     .hero {
@@ -136,6 +145,7 @@
         font-size: 2.5em;
         font-weight: bold;
         color: #000000;
+        font-family: 'Electrolize';
     }
 
     .text-tagline {
@@ -159,7 +169,7 @@
         transition: all 0.5s ease-in;
         font-family: 'montserrat';
         border: #000000 solid 1px;
-        
+
     }
 
     .button:hover {
@@ -174,7 +184,7 @@
     }
 
     .button span:after {
-        content: '\00bb';
+        content: '\003F';
         position: absolute;
         opacity: 0;
         top: 0;
@@ -201,47 +211,233 @@
     .img-brand img {
         width: 350px;
     }
-    .img-brand a :hover{
+
+    .img-brand a :hover {
         animation: shake 0.5s;
         animation-iteration-count: infinite;
     }
-   
 
-    .area-image-ig{
+    .area-image-ig {
         width: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .container{
-        width: 100vw;
-        height: 100vh;
-        background: #ffffff;
-    }
-    .panel{
-        width: 100px;
-        height: 150px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background: #000000;
 
+
+    hr {
+        border: 1px solid #000000;
+        margin-top: 10px;
     }
 
     @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
 
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    .skill {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .atas {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .html {
+        width: 300px;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #0000004b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .html img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chart-area {
+        display: flex;
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #0000004b;
+        border-radius: 15px;
+    }
+
+    .chart {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        border-radius: 15px;
+        margin: 20px;
+        font-size: 2.5em;
+    }
+
+    .desain {
+        width: 300px;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #0000004b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .desain img {
+        width: 55px;
+        height: 40px;
+    }
+
+    .bawah {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .panel-bola {
+        background: #ffffff;
+        width: 300px;
+        height: 80%;
+        box-shadow: 1px 1px 15px #0000004b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        flex-direction: column;
+        font-size: 1.0em;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .card-desc {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .panel-bola img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .panel-bola:hover {
+        background: #000000;
+        transition: 0.5s;
+    }
+
+    .panel-bola:hover .card-desc {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .panel-basket {
+        width: 300px;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #0000004b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .panel-basket img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .badminton {
+        width: 300px;
+        height: 80%;
+        background: #ffffff;
+        box-shadow: 1px 1px 15px #0000004b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'electrolize';
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .badminton img {
+        width: 80px;
+        height: 80px;
+    }
 </style>
+
 <body>
     <div class="navbar">
         <div class="navbar-brand">
@@ -254,7 +450,7 @@
                 <ul>
                     <li><a class="home-item" href="#">home</a></li>
                     <li><a class="about-item" href="#">about</a></li>
-                    <li><a class="service-item" href="#">experience</a> </li>
+                    <li><a class="service-item" href="#">skill</a> </li>
                     <li><a class="blog-item" href="#">contact</a></li>
                 </ul>
             </div>
@@ -264,21 +460,21 @@
         <div class="area-title">
             <div class="text-title">
                 <p>Hi, 👋 im Haikal</p>
+                <hr width="276px">
             </div>
             <div class="text-tagline">
                 <p>hello guys my full name is Haikal Al Fatih from class 10 RPL this is my first website bro hehe it's
                     still bad it's natural that everything has a process cuy it's good</p>
             </div>
-            <button class="button"><span>explore ?</span></button>
+            <button class="button"><span>explore</span></button>
         </div>
         <div class="area-image">
             <div class="img-brand">
-                <a href="https://www.instagram.com/kla.kall/" target="blank"><img
-                        src="ig.png" alt=""></a>
+                <a href="https://www.instagram.com/kla.kall/" target="blank"><img src="ig.png" alt=""></a>
 
             </div>
         </div>
-    </div><hr color="black">
+    </div>
     <div class="hero">
         <div class="area-image">
             <div class="img-brand">
@@ -288,16 +484,86 @@
         <div class="area-title">
             <div class="text-title">
                 <p>about me</p>
+                <hr width="175px">
             </div>
             <div class="text-tagline">
-                <p> i live in depok to be exact at harjamukti on the east east border, i was born in makassar and my junior high school was al-bassam and my high school was in idn</p>
+                <p> i live in depok to be exact at jl srikandi perumahan alpha cluster no 88b harjamukti depok on the
+                    east east border, i was born in makassar and my
+                    junior high school was al-bassam and my high school was in idn</p>
             </div>
             <button class="button"><span>read more</span></button>
         </div>
     </div>
-    </div><hr color="black">
-    <div class="container">
-        <div class="panel"></div>
+    </div>
+    <div class="skill">
+        <div class="atas">
+            <div class="html">
+                <img src="koding.png" alt="">
+                <hr width="115px">
+                <h3>HTML & CSS</h3>
+            </div>
+            <div class="chart-area">
+                <div id="myChart" class="chart">
+                </div>
+                <script>
+                    google.charts.load('current', {
+                        'packages': ['corechart']
+                    });
+                    google.charts.setOnLoadCallback(drawChart);
+
+                    function drawChart() {
+
+                        // Set Data
+                        const data = google.visualization.arrayToDataTable([
+                            ['Contry', 'Mhl'],
+                            ['football', 32.6],
+                            ['basketball', 27.4],
+                            ['badminton', 14.5],
+                            ['HTML', 13.3],
+                            ['Desain', 12.2]
+                        ]);
+
+                        // Set Options
+                        const options = {
+                            title: 'diagram skill',
+                            is3D: true
+                        };
+
+                        // Draw
+                        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+                        chart.draw(data, options);
+
+                    }
+                </script>
+            </div>
+            <div class="desain">
+                <img src="palet-removebg.png" alt="">
+                <hr width="75px">
+                <h3>DESAIN</h3>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="panel-bola hidden">
+                <img src="bola-removebg.png" alt="">
+                <hr width="75px">
+                <h3>FUTSAL</h3>
+                <div class="card-desc">
+                    <img src="decul.png" alt=""><hr width="20px" color="white">
+                    <p>My skill in playing ball is approximately 32.6% and this was quoted by the Chinese mixed-race Arab governor. I'm not good at playing football, I can only play if I'm good at it</p>
+                </div>
+            </div>
+            <div class="badminton hidden">
+                <img src="kok.png" alt="">
+                <hr width="125px">
+                <h3>BADMINTON</h3>
+            </div>
+            <div class="panel-basket">
+                <img src="basket.png" alt="">
+                <hr width="75px">
+                <h3>BASKET</h3>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

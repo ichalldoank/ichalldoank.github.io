@@ -21,14 +21,14 @@
     <p>IDN<superscript style="color: #6f00ff;">jaya</superscript>
     </p>
     <hr>
-<text-size>
-    
-</text-size>
+    <text-size>
+
+    </text-size>
     <h2>contoh hyperlinks</h2>
 
     <p>donlot apa aja <a
             href="https://docs.google.com/document/d/1YgYOVL_-Mt_TjFTZQqnpWx_grL9zY8k58kGGAfc55rE/edit?usp=sharing"
-            target="_blank"">disini</a></p>
+            target="_blank"">disini</a>hehe</p>
     <p><a href=" http://idn.sch.id" target="_blank">IDN link</a></p>
     <p><a href="heheboi.html" target="_blank" rel="noopener noreferrer">pencet yg ini ajahhh hehe</a></p>
     <a href=""><img
@@ -41,7 +41,7 @@
     <hr>
 
     <h2>tabel sederhana</h2>
-
+    z
     <table style="width: 80%;" border="1px #0000">
         <thead>
             <tr>
@@ -165,4 +165,367 @@
     https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFjCO9m3vjpULusO1Hogbxw5UXVfv4FU7dQ&usqp=CAU
 
 
+
+    <div class="chart-area">
+        <div id="myChart" class="chart">
+        </div>
+    </div>
+
+    <script>
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            // Set Data
+            const data = google.visualization.arrayToDataTable([
+                ['Contry', 'Mhl'],
+                ['football', 32.6],
+                ['basketball', 27.4],
+                ['HTML', 14.5],
+                ['CSS', 13.3],
+                ['Desain', 12.2]
+            ]);
+
+            // Set Options
+            const options = {
+                title: 'skills that only I can or have',
+                is3D: true
+            };
+
+            // Draw
+            const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+
+        }
+    </script>
+
+    <script>
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            // Set Data
+            const data = google.visualization.arrayToDataTable([
+                ['Contry', 'Mhl'],
+                ['Italy', 54.8],
+                ['France', 48.6],
+                ['Spain', 44.4],
+                ['USA', 23.9],
+                ['Argentina', 14.5]
+            ]);
+
+            // Set Options
+            const options = {
+                title: 'World Wide Wine Production',
+                is3D: true
+            };
+
+            // Draw
+            const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+
+        }
+    </script>
+    .chart-area {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    <div class="container">
+        <img src="alamat.png" alt="" class="image">
+        <div class="overlay">
+            <div class="text">jl srikandi perumahan alpha cluster no 88b harjamukti depok</div>
+        </div>
+    </div>
+    .container {
+    position: relative;
+    width: 50%;
+    }
+
+    .image {
+    display: block;
+    width: 50%;
+    height: auto;
+    }
+
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0000007e;
+    overflow: hidden;
+    width: 50%;
+    height: 0;
+    transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+    height: 100%;
+    }
+
+    .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'montserrat';
+    }
+
 </html>
+.skill {
+width: 100vw;
+height: 100vh;
+display: grid;
+grid-template-columns: auto auto auto;
+}
+
+.olahraga {
+display: flex;
+flex-direction: column;
+margin: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.chart-area {
+display: flex;
+flex-direction: column;
+margin: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.progaming {
+display: flex;
+flex-direction: column;
+margin: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.chart {
+width: 100%;
+height: 45%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+border-radius: 15px;
+margin: 20px;
+font-size: 2.5em;
+}
+
+.badminton {
+width: 300px;
+height: 55%;
+background: #ffffff;
+box-shadow: 1px 1px 15px #0000004b;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+border-radius: 15px;
+margin: 20px;
+}
+
+.badminton img {
+width: 80px;
+height: 80px;
+}
+
+.panel-bola {
+background: #ffffff;
+width: 300px;
+height: 45%;
+box-shadow: 1px 1px 15px #0000004b;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+font-size: 1.0em;
+border-radius: 15px;
+margin: 20px;
+}
+
+.card-desc{
+width: 100%;
+justify-content: center;
+align-items: center;
+display: none;
+}
+
+.panel-bola img {
+width: 40px;
+height: 40px;
+}
+.panel-bola:hover{
+background: #000000;
+transition: 0.5s;
+}
+
+.panel-bola:hover .card-desc{
+display: flex;
+color: #ffffff;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.panel-basket {
+width: 300px;
+height: 45%;
+background: #ffffff;
+box-shadow: 1px 1px 15px #0000004b;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+border-radius: 15px;
+margin: 20px;
+}
+
+.panel-basket img {
+width: 40px;
+height: 40px;
+}
+
+.koding {
+width: 300px;
+height: 45%;
+background: #ffffff;
+box-shadow: 1px 1px 15px #0000004b;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+border-radius: 15px;
+margin: 20px;
+}
+
+.koding img {
+width: 50px;
+height: 50px;
+}
+
+.desain {
+width: 300px;
+height: 45%;
+background: #ffffff;
+box-shadow: 1px 1px 15px #0000004b;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'electrolize';
+flex-direction: column;
+border-radius: 15px;
+margin: 20px;
+}
+
+.palet img {
+width: 55px;
+height: 40px;
+}
+
+.text-title-myskill {
+font-family: 'Changa';
+font-size: 1.5em;
+}
+<div class="skill">
+    <div class="olahraga hidden">
+        <div class="desain">
+            <img src="palet-removebg.png" alt="">
+            <hr width="75px">
+            <h3>DESAIN</h3>
+        </div>
+
+        <div class="panel-basket">
+            <img src="basket.png" alt="">
+            <hr width="75px">
+            <h3>BASKET</h3>
+        </div>
+    </div>
+    <div class="chart-area">
+        <div id="myChart" class="chart">
+        </div>
+    </div>
+    <div class="chart-area">
+        <div class="text-title-myskill">
+            <h1>MY SKILL</h1>
+        </div>
+        <div id="myChart" class="chart">
+        </div>
+        <script>
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+
+                // Set Data
+                const data = google.visualization.arrayToDataTable([
+                    ['Contry', 'Mhl'],
+                    ['football', 32.6],
+                    ['basketball', 27.4],
+                    ['badminton', 14.5],
+                    ['HTML', 13.3],
+                    ['Desain', 12.2]
+                ]);
+
+                // Set Options
+                const options = {
+                    title: 'diagram skill',
+                    is3D: true
+                };
+
+                // Draw
+                const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+                chart.draw(data, options);
+
+            }
+        </script>
+        <div class="badminton hidden">
+            <img src="kok.png" alt="">
+            <hr width="125px">
+            <h3>BADMINTON</h3>
+        </div>
+    </div>
+    <div class="progaming hidden">
+        <div class="html">
+            <img src="koding.png" alt="">
+            <hr width="115px">
+            <h3>HTML & CSS</h3>
+        </div>
+        <div class="panel-bola hidden">
+            <img src="bola-removebg.png" alt="">
+            <hr width="75px">
+            <h3>FUTSAL</h3>
+        </div>
+            <div class="card-desc">
+                <img src="decul.png" alt=""><hr width="20px" color="white">
+                <p>My skill in playing ball is approximately 32.6% and this was quoted by the Chinese mixed-race Arab governor. I'm not good at playing football, I can only play if I'm good at it</p>
+            </div>
+        </div>
+    </div>
+</div>
