@@ -412,12 +412,29 @@
         border-radius: 15px;
         margin: 20px;
     }
+    .card-desc-basket {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
 
     .panel-basket img {
         width: 40px;
         height: 40px;
     }
+    .panel-basket:hover {
+        background: #000000;
+        transition: 0.5s;
+    }
 
+    .panel-basket:hover .card-desc {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .badminton {
         width: 300px;
         height: 80%;
@@ -431,10 +448,28 @@
         border-radius: 15px;
         margin: 20px;
     }
+    .card-desc-badminton {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
 
     .badminton img {
         width: 80px;
         height: 80px;
+    }
+    .panel-badminton:hover {
+        background: #000000;
+        transition: 0.5s;
+    }
+
+    .panel-badminton:hover .card-desc {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 </style>
 
@@ -556,14 +591,23 @@
                 <img src="kok.png" alt="">
                 <hr width="125px">
                 <h3>BADMINTON</h3>
+                <div class="card-desc-badminton">
+                    <img src="kok.png" alt=""><hr width="20px" color="white">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, inventore?</p>
+                </div>
             </div>
-            <div class="panel-basket">
+            <div class="panel-basket hidden">
                 <img src="basket.png" alt="">
                 <hr width="75px">
                 <h3>BASKET</h3>
+                <div class="card-desc-basket">
+                    <img src="basket.png" alt=""><hr width="20px" color="white">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, inventore?</p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="address"></div>
 </body>
 
 </html>
