@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portofolio</title>
+    <title>portofolio-front-end</title>
     <link rel="icon" type="image/x-icon" href="images-removebg-preview.png">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
     * {
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
     .navbar {
@@ -303,10 +306,32 @@
         border-radius: 15px;
         margin: 20px;
     }
+    .card-desc-html {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
 
     .html img {
         width: 50px;
         height: 50px;
+    }
+    .html:hover {
+        background: #000000;
+        transition: 0.6s ease-in;
+    }
+
+    .html:hover .card-desc-html {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-desc-html img{
+        width: 130px;
+        height: 130px;
     }
 
     .chart-area {
@@ -344,10 +369,28 @@
         border-radius: 15px;
         margin: 20px;
     }
+    .card-desc-desain {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
 
     .desain img {
         width: 55px;
         height: 40px;
+    }
+    .desain:hover {
+        background: #000000;
+        transition: 0.6s ease-in;
+    }
+
+    .desain:hover .card-desc-desain {
+        display: flex;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .bawah {
@@ -388,7 +431,7 @@
 
     .panel-bola:hover {
         background: #000000;
-        transition: 0.5s;
+        transition: 0.6s ease-in;
     }
 
     .panel-bola:hover .card-desc {
@@ -425,10 +468,10 @@
     }
     .panel-basket:hover {
         background: #000000;
-        transition: 0.5s;
+        transition: 0.6s ease-in;
     }
 
-    .panel-basket:hover .card-desc {
+    .panel-basket:hover .card-desc-basket {
         display: flex;
         color: #ffffff;
         justify-content: center;
@@ -459,12 +502,12 @@
         width: 80px;
         height: 80px;
     }
-    .panel-badminton:hover {
+    .badminton:hover {
         background: #000000;
-        transition: 0.5s;
+        transition: 0.6s ease-in;
     }
 
-    .panel-badminton:hover .card-desc {
+    .badminton:hover .card-desc-badminton {
         display: flex;
         color: #ffffff;
         justify-content: center;
@@ -479,8 +522,8 @@
         width: 100%;
         height: 10%;
         font-family: 'space grotesk';
-        text-align: center;
         font-size: 1.5em;
+        text-align: center;
 
     }
     .title-alamat p{
@@ -495,15 +538,50 @@
     .alamat{
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .alamat img{
+        width: 540px;
+        height: 400px;
+        
     }
     .email{
         width: 100%;
         height: 100%;
     }
+    .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .panel {
+            width: 60%;
+            height: 60%;
+            padding: 20px;
+        }
+        form {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
 </style>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down" data-aos-delay="500">
         <div class="navbar-brand">
             <img src="images-removebg-preview.png" alt="" width="50 px">
             <h1>Portofolio</h1>
@@ -520,7 +598,7 @@
             </div>
         </div>
     </div>
-    <div class="hero">
+    <div class="hero" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom">
         <div class="area-title">
             <div class="text-title">
                 <p>Hi, 👋 im Haikal</p>
@@ -539,7 +617,7 @@
             </div>
         </div>
     </div>
-    <div class="hero">
+    <div class="hero" data-aos="fade-left" data-aos-delay="400">
         <div class="area-image">
             <div class="img-brand">
                 <img src="Screenshot 2023-08-14 at 07.33 1.png" alt="">
@@ -559,12 +637,16 @@
         </div>
     </div>
     </div>
-    <div class="skill">
+    <div class="skill" data-aos="zoom-out-up" data-aos-delay="500">
         <div class="atas">
-            <div class="html">
+            <div class="html hidden">
                 <img src="koding.png" alt="">
                 <hr width="115px">
                 <h3>HTML & CSS</h3>
+                <div class="card-desc-html">
+                    <img src="https://o.remove.bg/downloads/0022114c-a505-4e98-aae6-154b6fb00454/HD-wallpaper-tag-code-hacker-programming-javascript-python-coder-software-coding-computer-science-css-web-design-html-linux-html5-programmer-laptop-tech-php-developer-thumbnail-removebg-preview.png" alt=""><hr width="20px" color="white">
+                    <p>heheboi</p>
+                </div>
             </div>
             <div class="chart-area">
                 <div id="myChart" class="chart">
@@ -600,10 +682,14 @@
                     }
                 </script>
             </div>
-            <div class="desain">
+            <div class="desain hidden">
                 <img src="palet-removebg.png" alt="">
                 <hr width="75px">
                 <h3>DESAIN</h3>
+                <div class="card-desc-desain">
+                    <img src="https://o.remove.bg/downloads/c80b320a-aa91-4060-a30c-0964a65fd024/pngtree-vector-color-palette-icon-png-image_4254073-removebg-preview.png" alt=""><hr width="20px" color="white">
+                    <p>heheboi</p>
+                </div>
             </div>
         </div>
         <div class="bawah">
@@ -613,6 +699,7 @@
                 <h3>FUTSAL</h3>
                 <div class="card-desc">
                     <img src="decul.png" alt=""><hr width="20px" color="white">
+                    <p>heheboi</p>
                 </div>
             </div>
             <div class="badminton hidden">
@@ -620,8 +707,8 @@
                 <hr width="75px">
                 <h3>BADMINTON</h3>
                 <div class="card-desc-badminton">
-                    <img src="kok.png" alt=""><hr width="20px" color="white">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, inventore?</p>
+                    <img src="kok buat desc.png" alt=""><hr width="20px" color="white">
+                    <p>heheboi</p>
                 </div>
             </div>
             <div class="panel-basket hidden">
@@ -629,24 +716,43 @@
                 <hr width="75px">
                 <h3>BASKET</h3>
                 <div class="card-desc-basket">
-                    <img src="basket.png" alt=""><hr width="20px" color="white">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, inventore?</p>
+                    <img src="basket bre.png" alt=""><hr width="20px" color="white">
+                    <p>heheboi</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="address">
-        <div class="title-alamat">
+        <div class="title-alamat"data-aos="fade-left" data-aos-delay="500">
             <h1>Contact me</h1>
             <p>about software enginer and others</p>
         </div>
         <div class="bagian-alamat">
-            <div class="alamat">
-                <img src="" alt="">
+            <div class="alamat"data-aos="flip-left" data-aos-delay="500">
+                <a href="https://www.google.com/maps/place/Propolis+Diamond+Lite+20/@-6.3732667,106.8863147,15z/data=!4m6!3m5!1s0x2e69ed35ee41f74b:0x5ca0259399a6e237!8m2!3d-6.3732667!4d106.8863147!16s%2Fg%2F11jrl_2xp9?entry=ttu" target="_blank"><img src="alamat.png" alt="address"></a>
             </div>
-            <div class="email"></div>
+            <div class="email">
+                <div class="container" data-aos="zoom-out-down" data-aos-delay="500">
+                    <div class="panel">
+                        <form action="https://id-mpl.com/" method="post">
+                            <input type="email" required placeholder ="email">
+                            <input type="password" required placeholder="password">
+                            <input type="text" required placeholder="message">
+                            <input type="submit" class="btn login" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        AOS.init({
+      duration: 1000,
+      once: false,
+    });
+      </script>
+
 </body>
 
 </html>
