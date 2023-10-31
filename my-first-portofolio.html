@@ -36,6 +36,7 @@
     * {
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
 
     .splash-container {
@@ -96,6 +97,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 60px;
+    }
+
+    .navbar-item ul li a {
+        position: relative;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .navbar-item ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+
+    .navbar-item ul li a:hover::after {
+        width: 100%;
+        border-radius: 1000px;
     }
 
     ul {
@@ -116,11 +141,9 @@
     .home-item {
         padding: 10px 20px;
         border-radius: 13px;
-        background: #ffffff;
-        color: #000000;
-        font-family: 'space grotesk';
-        box-shadow: 0px 0px 15px white;
-
+        color: #ffffff;
+        font-family: 'Rubik';
+        font-size: 1.2em;
     }
 
     .about-item {
@@ -128,100 +151,118 @@
         border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family: 'space grotesk';
-    }
+        font-family: 'Rubik';
+        font-size: 1.2em;
 
-    .about-item:hover {
-        background: #ffffff;
-        color: #000000;
-        box-shadow: 0px 0px 15px white;
     }
-
     .service-item {
         padding: 10px 20px;
         border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family: 'space grotesk';
-    }
-
-    .service-item:hover {
-        background: #ffffff;
-        color: #000000;
-        box-shadow: 0px 0px 15px white;
+        font-family: 'Rubik';
+        font-size: 1.2em;
 
     }
+
+    
 
     .blog-item {
         padding: 10px 20px;
         border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family: 'space grotesk';
+        font-family: 'Rubik';
     }
 
-    .blog-item:hover {
-        background: #ffffff;
-        color: #000000;
-        box-shadow: 0px 0px 15px white;
-
-    }
+    
 
     .contact-item {
         padding: 10px 20px;
         border-radius: 13px;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        font-family: 'space grotesk';
+        font-family: 'Rubik';
+        font-size: 1.2em;
     }
 
-    .contact-item:hover {
-        background: #ffffff;
-        color: #000000;
-        box-shadow: 0px 0px 15px white;
-
-    }
+    
 
     /* bagian hero */
 
     .hero {
         width: 100vw;
-        height: 80vh;
-        background-color: #ffffff;
+        height: 90vh;
+        background-color: #000000;
         background-image: url('Group 48096133');
         background-size: cover;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-family: 'montserrat';
     }
 
     .area-title {
         width: 30%;
         padding: 100px;
-        font-family: 'montserrat';
+        font-family: 'poppins';
     }
 
     .text-title {
         font-size: 2.5em;
         font-weight: bold;
-        color: #000000;
+        color: #ffffff;
         font-family: 'poppins';
     }
 
     .text-tagline {
         font-size: 1.5em;
         margin-top: 30px;
-        color: #000000;
+        color: #ffffff;
     }
-    .text-tagline span{
+
+    .text-tagline span {
         color: #01aaff;
     }
+
+    .hero2 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        background-image: url('Group 48096133');
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .area-title2 {
+        width: 30%;
+        padding: 100px;
+        font-family: 'poppins';
+    }
+
+    .text-title2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #000000;
+        font-family: 'poppins';
+    }
+
+    .text-tagline2 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: #000000;
+    }
+
+    .text-tagline2 span {
+        color: #01aaff;
+    }
+
     .button {
         border-radius: 10px;
         border: none;
-        background: #ffffff;
-        color: #000000;
+        background: #000000;
+        color: #ffffff;
         text-align: center;
         font-size: 23px;
         padding: 10px;
@@ -230,14 +271,14 @@
         cursor: pointer;
         margin-top: 25px;
         transition: all 0.5s ease-in;
-        font-family: 'montserrat';
-        border: #000000 solid 1px;
+        font-family: 'poppins';
+        border: #ffffff solid 1px;
 
     }
 
     .button:hover {
-        background: #000000;
-        color: #ffffff;
+        background: #ffffff;
+        color: #000000;
     }
 
     .button span {
@@ -264,20 +305,90 @@
         right: 0;
     }
 
+    .button2 {
+        border-radius: 10px;
+        border: none;
+        background: #ffffff;
+        color: #000000;
+        text-align: center;
+        font-size: 23px;
+        padding: 10px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: all 0.5s ease-in;
+        font-family: 'poppins';
+        border: #000000 solid 1px;
+
+    }
+
+    .button2:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+
+    .button2 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+    }
+
+    .button2 span:after {
+        content: '\003F';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button2:hover span {
+        padding-right: 25px;
+    }
+
+    .button2:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+
+
     .area-image {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: visible;
+
     }
 
     .img-brand img {
-        width: 350px;
+        width: 335px;
+        border-radius: 50%;
+        transition: 0.4s;
     }
 
     .img-brand a :hover {
+        transition: 0.4s;
+        scale: 1.1;
         animation: shake 0.5s;
         animation-iteration-count: infinite;
+        box-shadow: 0px 0px 30px gray;
+    }
+
+    .img-brand-2 img {
+        width: 335px;
+        border-radius: 50%;
+        transition: 0.4s;
+        margin-left: 50px;
+    }
+
+    .img-brand-2 img:hover {
+        transition: 0.4s;
+        scale: 1.1;
+        box-shadow: 0px 0px 30px gray;
+        border-radius: 50%;
     }
 
     .area-image-ig {
@@ -342,6 +453,7 @@
         width: 100vw;
         height: 100vh;
     }
+
     .atas {
         width: 100%;
         height: 50%;
@@ -391,7 +503,7 @@
         flex-direction: column;
     }
 
-    .html:hover img{
+    .html:hover img {
         display: none;
     }
 
@@ -463,9 +575,11 @@
         text-align: center;
         flex-direction: column;
     }
-    .desain:hover img{
+
+    .desain:hover img {
         display: none;
     }
+
     .bawah {
         width: 100%;
         height: 50%;
@@ -516,9 +630,11 @@
         text-align: center;
         flex-direction: column;
     }
-    .panel-bola:hover img{
+
+    .panel-bola:hover img {
         display: none;
     }
+
     .panel-basket {
         width: 300px;
         height: 80%;
@@ -559,9 +675,11 @@
         text-align: center;
         flex-direction: column;
     }
-    .panel-basket:hover img{
+
+    .panel-basket:hover img {
         display: none;
     }
+
     .badminton {
         width: 300px;
         height: 80%;
@@ -602,9 +720,11 @@
         text-align: center;
         flex-direction: column;
     }
-    .badminton:hover img{
+
+    .badminton:hover img {
         display: none;
     }
+
     .address {
         width: 100vw;
         height: 93vh;
@@ -688,33 +808,39 @@
     }
 
     @media only screen and (max-width: 412px) {
-        .navbar{
+        .navbar {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .navbar-item{
+
+        .navbar-item {
             width: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .hero{
+
+        .hero {
             width: 100%;
             height: 100%;
         }
-        .area-title{
+
+        .area-title {
             font-size: 0.5em;
         }
-        .area-image{
+
+        .area-image {
             width: 20px;
         }
-        .button{
+
+        .button {
             size: 0.3em;
         }
     }
-    footer{
+
+    footer {
         width: 100%;
         height: 7%;
         display: flex;
@@ -741,51 +867,52 @@
             <div class="list-item">
                 <a href="#"><b></b></a>
                 <ul>
-                    <li><a class="home-item" href="#">home</a></li>
-                    <li><a class="about-item" href="#">about</a></li>
-                    <li><a class="service-item" href="#">skill</a> </li>
-                    <li><a class="blog-item" href="#">contact</a></li>
+                    <li><a class="home-item" href="#">Home</a></li>
+                    <li><a class="about-item" href="#about">About</a></li>
+                    <li><a class="service-item" href="#skill">Skill</a> </li>
+                    <li><a class="blog-item" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="hero">
-        <div class="area-title" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom">
+    <div class="hero" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom">
+        <div class="area-title">
             <div class="text-title">
-                <p>Hi, 👋 im Haikal</p>
+                <p>Hola, 👋 im Haikal</p>
             </div>
             <div class="text-tagline">
-                <p>hello guys my full name is Haikal Al Fatih you can call me haikal, Im student at <span>IDN Boarding School</span>. I'm from 10 RPL and this is my first portoflio</p>
+                <p>hello guys my full name is Haikal Al Fatih you can call me haikal, Im student at <span>IDN Boarding
+                        School</span>. I'm from 10 RPL and this is my first portoflio</p>
             </div>
             <button class="button"><span>explore</span></button>
         </div>
         <div class="area-image" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom">
             <div class="img-brand">
-                <a href="https://www.instagram.com/kla.kall/" target="blank"><img src="kon.png" alt=""></a>
+                <a href="https://www.instagram.com/kla.kall/" target="blank"><img src="ketjeh.png" alt=""></a>
 
             </div>
         </div>
     </div>
-    <div class="hero" data-aos="fade-left" data-aos-delay="400">
-        <div class="area-image">
-            <div class="img-brand">
-                <img src="Screenshot 2023-08-14 at 07.33 1.png" alt="">
+    <div class="hero2" id="about" data-aos="fade-left" data-aos-delay="400">
+        <div class="area-image2">
+            <div class="img-brand-2">
+                <img src="Screenshot 2023-10-27 at 20.26 1.png" alt="">
             </div>
         </div>
-        <div class="area-title">
-            <div class="text-title">
+        <div class="area-title2">
+            <div class="text-title2">
                 <p>about me</p>
             </div>
-            <div class="text-tagline">
+            <div class="text-tagline2">
                 <p> i live in depok to be exact at jl srikandi perumahan alpha cluster no 88b harjamukti depok on the
-                    east east border, i was born in <span>makassar</span>  and my
+                    east east border, i was born in <span>makassar</span> and my
                     junior high school was al-bassam and my high school was in idn</p>
             </div>
-            <button class="button"><span>read more</span></button>
+            <button class="button2"><span>read more</span></button>
         </div>
     </div>
     </div>
-    <div class="skill" data-aos="zoom-out-up" data-aos-delay="500">
+    <div class="skill" id="skill" data-aos="zoom-out-up" data-aos-delay="500">
         <div class="atas">
             <div class="html">
                 <img src="koding.png" alt="">
@@ -805,7 +932,8 @@
                 <img src="palet-removebg.png" alt="">
                 <h3>DESAIN</h3>
                 <div class="card-desc-desain">
-                    <p>Skill saya dalam mendesain sesuatu cukup baik di figma atau yang lainnya. Meskipun saya tidak ada bawaan IT dari smp 😅</p>
+                    <p>Skill saya dalam mendesain sesuatu cukup baik di figma atau yang lainnya. Meskipun saya tidak ada
+                        bawaan IT dari smp 😅</p>
                 </div>
             </div>
         </div>
@@ -814,26 +942,29 @@
                 <img src="bola-removebg.png" alt="">
                 <h3>FUTSAL</h3>
                 <div class="card-desc">
-                    <p>Olahraga yang paling saya senangi adalah futsal, karena futsal adalah hobi saya. Kedepannya saya ingin membuat IDN juara futsal ⚽️🔥</p>
+                    <p>Olahraga yang paling saya senangi adalah futsal, karena futsal adalah hobi saya. Kedepannya saya
+                        ingin membuat IDN juara futsal ⚽️🔥</p>
                 </div>
             </div>
             <div class="badminton">
                 <img src="kok.png" alt="">
                 <h3>BADMINTON</h3>
                 <div class="card-desc-badminton">
-                    <p>Olahraga sampingan yang saya lakukan selain berain futsal adalah badminton. Saya bisa bermain badminton akan tetapi saya tidak jago 🏸 🙌</p>
+                    <p>Olahraga sampingan yang saya lakukan selain berain futsal adalah badminton. Saya bisa bermain
+                        badminton akan tetapi saya tidak jago 🏸 🙌</p>
                 </div>
             </div>
             <div class="panel-basket">
                 <img src="basket.png" alt="">
                 <h3>BASKET</h3>
                 <div class="card-desc-basket">
-                    <p>Olahraga favorit saya setelah futsal adalah basket. Tubuh saya memang kecil oleh karena itu saya ingin jago dalam olahraga ini, saya ingin menjadi point guard yang jago. 🏀🔥</p>
+                    <p>Olahraga favorit saya setelah futsal adalah basket. Tubuh saya memang kecil oleh karena itu saya
+                        ingin jago dalam olahraga ini, saya ingin menjadi point guard yang jago. 🏀🔥</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="address">
+    <div class="address" id="contact">
         <div class="title-alamat" data-aos="fade-left" data-aos-delay="500">
             <h1>Contact me</h1>
             <p>about software enginer or others</p>
@@ -860,30 +991,30 @@
     <footer>Copyright © 2023 haikal al fatih. All Rights Reserved.</footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const splashContainer = document.querySelector(".splash-container");
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const splashContainer = document.querySelector(".splash-container");
 
-            setTimeout(function () {
-                splashContainer.classList.add("hidden");
-                setTimeout(function () {
-                    splashContainer.style.display = "none";
-                }, 1000);
-            }, 2300);
+        //     setTimeout(function () {
+        //         splashContainer.classList.add("hidden");
+        //         setTimeout(function () {
+        //             splashContainer.style.display = "none";
+        //         }, 1000);
+        //     }, 2300);
 
-            const animatedText = document.querySelector('.animated-text');
-            const words = ['اهلا وسهلا', 'Hola', 'Bonjour', 'Privet', 'Привет', 'こんにちは',
-                'Merhaba',
-                'Namaste', 'God Dag', 'Anyoung', '안녕하세요'
-            ];
-            let currentWordIndex = 0;
+        //     const animatedText = document.querySelector('.animated-text');
+        //     const words = ['اهلا وسهلا', 'Hola', 'Bonjour', 'Privet', 'Привет', 'こんにちは',
+        //         'Merhaba',
+        //         'Namaste', 'God Dag', 'Anyoung', '안녕하세요'
+        //     ];
+        //     let currentWordIndex = 0;
 
-            function changeWord() {
-                animatedText.textContent = words[currentWordIndex];
-                currentWordIndex = (currentWordIndex + 1) % words.length;
-            }
+        //     function changeWord() {
+        //         animatedText.textContent = words[currentWordIndex];
+        //         currentWordIndex = (currentWordIndex + 1) % words.length;
+        //     }
 
-            setInterval(changeWord, 200);
-        });
+        //     setInterval(changeWord, 200);
+        // });
 
         google.charts.load('current', {
             'packages': ['corechart']
