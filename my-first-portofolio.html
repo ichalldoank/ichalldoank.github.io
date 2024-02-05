@@ -12,7 +12,6 @@
     <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
@@ -100,7 +99,7 @@
         margin-left: 60px;
     }
 
-    .navbar-item ul li a {
+    .nav-item ul li a {
         position: relative;
         text-decoration: none;
         color: #ffffff;
@@ -142,6 +141,7 @@
         padding: 10px 20px;
         border-radius: 13px;
         color: #ffffff;
+        transition: all 0.5s ease-in;
         font-family: 'Rubik';
         font-size: 1.2em;
     }
@@ -377,32 +377,6 @@
         box-shadow: 0px 0px 30px gray;
     }
 
-    .img-brand-2 img {
-        width: 335px;
-        border-radius: 50%;
-        transition: 0.4s;
-        margin-left: 50px;
-    }
-
-    .img-brand-2 img:hover {
-        transition: 0.4s;
-        scale: 1.1;
-        box-shadow: 0px 0px 30px gray;
-        border-radius: 50%;
-    }
-
-    .area-image-ig {
-        width: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn-login hr {
-        border: 1px solid #000000;
-        margin-top: 10px;
-    }
-
     @keyframes shake {
         0% {
             transform: translate(1px, 1px) rotate(0deg);
@@ -447,6 +421,32 @@
         100% {
             transform: translate(1px, -2px) rotate(-1deg);
         }
+    }
+
+    .img-brand-2 img {
+        width: 335px;
+        border-radius: 50%;
+        transition: 0.4s;
+        margin-left: 50px;
+    }
+
+    .img-brand-2 img:hover {
+        transition: 0.4s;
+        scale: 1.1;
+        box-shadow: 0px 0px 30px gray;
+        border-radius: 50%;
+    }
+
+    .area-image-ig {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-login hr {
+        border: 1px solid #000000;
+        margin-top: 10px;
     }
 
     .skill {
